@@ -38,7 +38,7 @@ a {
   width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 22.4px;
 }
 
 .btn {
@@ -180,7 +180,7 @@ a {
 
 /* Generic section */
 .section {
-  padding: 100px 0;
+  padding: 70px 0;
 }
 
 .section-light {
@@ -226,8 +226,8 @@ a {
 .experience-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 48px;
-  margin-bottom: 64px;
+  gap: 33.6px;
+  margin-bottom: 44.8px;
 }
 
 .experience-card {
@@ -259,9 +259,9 @@ a {
 .steps-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 48px;
+  gap: 33.6px;
   text-align: center;
-  margin-top: 56px;
+  margin-top: 39.2px;
 }
 
 .step-icon {
@@ -288,7 +288,7 @@ a {
 .services-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 64px;
+  gap: 44.8px;
   align-items: start;
 }
 
@@ -442,6 +442,6 @@ a {
   }
 
   .section {
-    padding: 64px 0;
+    padding: 44.8px 0;
   }
 }
