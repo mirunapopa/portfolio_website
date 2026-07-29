@@ -3,7 +3,7 @@ title: "Contact me."
 email: "hello@mirunapopa.com"
 social:
   label: "mirunapopa"
-  url: "#"
+  url: "https://www.linkedin.com/in/mirunapopa/"
 legal:
   - label: "Datenschutzerklärung"
     url: "#"
