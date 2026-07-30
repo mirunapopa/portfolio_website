@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import content from '../lib/content.js'
 
 export default function Footer() {
@@ -20,9 +21,9 @@ export default function Footer() {
             </div>
             <div className="footer-legal">
               {legal.map((item) => (
-                <a key={item.label} href={item.url}>
+                <Link key={item.label} to={item.url}>
                   {item.label.toUpperCase()}
-                </a>
+                </Link>
               ))}
             </div>
           </div>

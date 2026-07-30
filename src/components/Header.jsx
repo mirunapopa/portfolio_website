@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import content from '../lib/content.js'
 import logo from '../assets/logo.png'
 
@@ -7,7 +8,7 @@ export default function Header() {
   return (
     <header className="site-header">
       <div className="container">
-        <a href="#top" className="brand">
+        <Link to="/" className="brand">
           <img src={logo} alt={`${name} logo`} />
           <span>
             <span className="brand-name" style={{ display: 'block' }}>
@@ -15,12 +16,12 @@ export default function Header() {
             </span>
             <span className="brand-tagline">{tagline}</span>
           </span>
-        </a>
+        </Link>
         <nav className="nav">
           {nav.map((item) => (
-            <a key={item.url} href={item.url} className="nav-link">
+            <Link key={item.url} to={item.url} className="nav-link">
               {item.label}
-            </a>
+            </Link>
           ))}
           <a href={ctaLink} target="_blank" rel="noreferrer" className="btn">
             {cta}
