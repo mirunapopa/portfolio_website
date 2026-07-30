@@ -117,6 +117,15 @@ a {
   text-decoration: none;
   font-weight: 600;
   color: var(--color-text);
+  padding: 4px 8px;
+  margin: -4px -8px;
+  border-radius: 2px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.nav-link:hover {
+  background-color: var(--color-accent);
+  color: var(--color-light);
 }
 
 .nav .btn {
@@ -326,11 +335,6 @@ a {
 }
 
 /* Footer */
-.site-footer-top {
-  background: var(--color-dark);
-  height: 120px;
-}
-
 .site-footer {
   background: var(--color-light);
   padding: 56px 0 24px;
@@ -361,7 +365,15 @@ a {
   color: var(--color-accent);
   font-weight: 700;
   text-decoration: underline;
-  margin-bottom: 8px;
+  padding: 2px 6px;
+  margin: -2px -6px 6px;
+  border-radius: 2px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.footer-contact a:hover {
+  background-color: var(--color-accent);
+  color: var(--color-light);
 }
 
 .footer-legal {
@@ -374,6 +386,15 @@ a {
   font-family: var(--font-display);
   font-size: 0.85rem;
   letter-spacing: 0.03em;
+  padding: 4px 8px;
+  margin: -4px -8px;
+  border-radius: 2px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.footer-legal a:hover {
+  background-color: var(--color-accent);
+  color: var(--color-light);
 }
 
 /* About Me page */
@@ -388,9 +409,17 @@ a {
 }
 
 .about-hero-img {
-  max-width: 640px;
+  max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+
+.section-light.about-section {
+  background: #ffffff;
+}
+
+.about-photo-section {
+  padding: 44.8px 0;
 }
 
 .about-grid {
@@ -470,6 +499,15 @@ a {
 .legal-content a {
   color: var(--color-accent);
   text-decoration: underline;
+  padding: 1px 4px;
+  margin: -1px -4px;
+  border-radius: 2px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.legal-content a:hover {
+  background-color: var(--color-accent);
+  color: var(--color-light);
 }
 
 /* Reveal animation */

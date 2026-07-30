@@ -26,7 +26,7 @@ export default function AboutMe() {
     <>
       <Header />
 
-      <section className="section section-light about-hero">
+      <section className="section section-light about-section about-hero">
         <div className="container">
           <Reveal as="h1" className="about-title">
             {title}
@@ -35,7 +35,7 @@ export default function AboutMe() {
         </div>
       </section>
 
-      <section className="section section-light">
+      <section className="section section-light about-section">
         <div className="container about-grid">
           <Reveal as="div">
             <h2 className="about-heading">{story.heading}</h2>
@@ -47,7 +47,7 @@ export default function AboutMe() {
         </div>
       </section>
 
-      <section className="section section-light">
+      <section className="section section-light about-section">
         <div className="container">
           <Reveal as="div" className="about-text-right">
             <h2 className="about-heading">{curiosity.heading}</h2>
@@ -58,11 +58,13 @@ export default function AboutMe() {
         </div>
       </section>
 
-      <div className="container">
-        <img src={coffeeImg} alt="" className="about-full-img" />
+      <div className="about-section about-photo-section">
+        <div className="container">
+          <img src={coffeeImg} alt="" className="about-full-img" />
+        </div>
       </div>
 
-      <section className="section section-light about-quote">
+      <section className="section section-light about-section about-quote">
         <div className="container">
           <Reveal as="blockquote" className="about-quote-text">
             <ReactMarkdown>{quote.heading}</ReactMarkdown>
