@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import posthog from '../lib/posthog.js'
+import { acceptCookies, rejectCookies } from '../lib/posthog.js'
 import { useCookieConsent } from '../lib/CookieConsentContext.jsx'
 import content from '../lib/content.js'
 
@@ -10,12 +10,12 @@ export default function CookieBanner() {
   if (!isOpen) return null
 
   const handleAccept = () => {
-    posthog.opt_in_capturing()
+    acceptCookies()
     close()
   }
 
   const handleReject = () => {
-    posthog.opt_out_capturing()
+    rejectCookies()
     close()
   }
 
