@@ -117,8 +117,8 @@ a {
   text-decoration: none;
   font-weight: 600;
   color: var(--color-text);
-  padding: 4px 8px;
-  margin: -4px -8px;
+  padding: 18.2px 31.2px;
+  margin: -18.2px -31.2px;
   border-radius: 2px;
   transition: background-color 0.15s ease, color 0.15s ease;
 }
@@ -365,8 +365,8 @@ a {
   color: var(--color-accent);
   font-weight: 700;
   text-decoration: underline;
-  padding: 2px 6px;
-  margin: -2px -6px 6px;
+  padding: 18.2px 31.2px;
+  margin: -18.2px -31.2px 6px;
   border-radius: 2px;
   transition: background-color 0.15s ease, color 0.15s ease;
 }
@@ -386,8 +386,8 @@ a {
   font-family: var(--font-display);
   font-size: 0.85rem;
   letter-spacing: 0.03em;
-  padding: 4px 8px;
-  margin: -4px -8px;
+  padding: 18.2px 31.2px;
+  margin: -18.2px -31.2px;
   border-radius: 2px;
   transition: background-color 0.15s ease, color 0.15s ease;
 }
@@ -414,7 +414,7 @@ a {
   margin: 0 auto;
 }
 
-.section-light.about-section {
+.about-section {
   background: #ffffff;
 }
 
@@ -470,6 +470,10 @@ a {
 }
 
 /* Legal pages */
+.legal-page {
+  background: #ffffff;
+}
+
 .legal-content {
   max-width: 900px;
   padding-top: 40px;
