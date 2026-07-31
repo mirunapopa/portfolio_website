@@ -14,6 +14,10 @@ if (!posthogKey || !posthogHost) {
   posthog.init(posthogKey, {
     api_host: posthogHost,
     capture_exceptions: true,
+    // This is a single-page app using hash-based routing, which the
+    // default pageview autocapture doesn't detect on in-app navigation.
+    // PageViewTracker fires $pageview manually on every route change instead.
+    capture_pageview: false,
   })
 }
 

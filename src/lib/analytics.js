@@ -7,6 +7,10 @@ import posthog from './posthog.js'
  * easy to rename or extend from one file.
  */
 export const analytics = {
+  pageViewed({ pageName }) {
+    posthog.capture('$pageview', { page_name: pageName })
+  },
+
   ctaClicked({ location }) {
     posthog.capture('cta_clicked', { location })
   },
