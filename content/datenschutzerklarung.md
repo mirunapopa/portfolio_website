@@ -35,18 +35,6 @@ Detaillierte Informationen zu diesen Analyseprogrammen finden Sie in der folgend
 
 Wir hosten die Inhalte unserer Website bei folgenden Anbietern:
 
-### Squarespace
-
-Anbieter ist die Squarespace Ireland Ltd., Le Pole House, Ship Street Great, Dublin 8, Irland (nachfolgend Squarespace).
-
-Squarespace ist ein Tool zum Erstellen und zum Hosten von Websites. Wenn Sie unsere Website besuchen, werden Ihre Daten auf den Servern von Squarespace verarbeitet. Hierbei können auch personenbezogene Daten an das Mutterunternehmen von Squarespace, die Squarespace Inc., 8 Clarkson St, New York, NY 10014, USA übermittelt werden. Squarespace speichert ferner Cookies, die für die Darstellung der Seite und zur Gewährleistung der Sicherheit erforderlich sind (notwendige Cookies).
-
-Die Verwendung von Squarespace erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse an einer möglichst zuverlässigen Darstellung unserer Website. Sofern eine entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG, soweit die Einwilligung die Speicherung von Cookies oder den Zugriff auf Informationen im Endgerät des Nutzers (z. B. Device-Fingerprinting) im Sinne des TDDDG umfasst. Die Einwilligung ist jederzeit widerrufbar.
-
-Die Datenübertragung in die USA wird auf die Standardvertragsklauseln der EU-Kommission gestützt. Details finden Sie hier:https://support.squarespace.com/hc/de/articles/360000851908-DSGVO-und-Squarespace.
-
-Das Unternehmen verfügt über eine Zertifizierung nach dem „EU-US Data Privacy Framework“ (DPF). Der DPF ist ein Übereinkommen zwischen der Europäischen Union und den USA, der die Einhaltung europäischer Datenschutzstandards bei Datenverarbeitungen in den USA gewährleisten soll. Jedes nach dem DPF zertifizierte Unternehmen verpflichtet sich, diese Datenschutzstandards einzuhalten. Weitere Informationen hierzu erhalten Sie vom Anbieter unter folgendem Link: https://www.dataprivacyframework.gov/participant/4774.
-
 ### Externes Hosting
 
 Diese Website wird extern gehostet. Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters / der Hoster gespeichert. Hierbei kann es sich v. a. um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Websitezugriffe und sonstige Daten, die über eine Website generiert werden, handeln.
@@ -148,6 +136,16 @@ Cookies, die zur Durchführung des elektronischen Kommunikationsvorgangs, zur B
 Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle oder generell ausschließen sowie das automatische Löschen der Cookies beim Schließen des Browsers aktivieren. Bei der Deaktivierung von Cookies kann die Funktionalität dieser Website eingeschränkt sein.
 
 Sofern weitere Cookies und Dienste auf dieser Website eingesetzt werden, können Sie dies dieser Datenschutzerklärung entnehmen.
+
+### PostHog (Webanalyse)
+
+Diese Website nutzt den Analysedienst PostHog. Anbieter ist PostHog GmbH (Deutschland) bzw. PostHog Inc., 2261 Market Street #4008, San Francisco, CA 94114, USA (zusammen "PostHog"). Die Datenverarbeitung erfolgt auf Servern von PostHog in der EU (Deutschland).
+
+PostHog wird ausschließlich eingesetzt, wenn Sie hierzu über den Cookie-Banner dieser Website ausdrücklich eingewilligt haben. Erst nach Ihrer Einwilligung werden ein Cookie sowie ein lokaler Speichereintrag zur Wiedererkennung gesetzt und Ihr Verhalten auf der Website (u. a. aufgerufene Seiten, Klicks auf Kontakt- und Buchungs-Links, technische Fehler) erfasst. Dabei werden u. a. Ihre IP-Adresse und Geräteinformationen verarbeitet. Vor Ihrer Einwilligung werden keine Daten an PostHog übermittelt und keine entsprechenden Cookies gesetzt.
+
+Die Verarbeitung erfolgt auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG). Sie können Ihre Einwilligung jederzeit über den Button "Cookie Preferences" auf dieser Website widerrufen; die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung bleibt davon unberührt.
+
+Weitere Informationen zum Datenschutz bei PostHog finden Sie unter: https://posthog.com/privacy
 
 ### Server-Log-Dateien
 
