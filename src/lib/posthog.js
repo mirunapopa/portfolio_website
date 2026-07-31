@@ -18,6 +18,9 @@ if (!posthogKey || !posthogHost) {
     // default pageview autocapture doesn't detect on in-app navigation.
     // PageViewTracker fires $pageview manually on every route change instead.
     capture_pageview: false,
+    // GDPR: nothing is captured until the cookie banner records an
+    // explicit accept via posthog.opt_in_capturing().
+    opt_out_capturing_by_default: true,
   })
 }
 
