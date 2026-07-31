@@ -164,8 +164,9 @@ Unser(e) Hoster wird bzw. werden Ihre Daten nur insoweit verarbeiten, wie dies z
 
 Wir setzen folgende(n) Hoster ein:
 
-Calendly LLC
-271 17th St NW, Suite 1000 Atlanta, GA 30363
+GitHub, Inc.
+88 Colin P. Kelly Jr. St.
+San Francisco, CA 94107
 USA
 
 ### 3. Allgemeine Hinweise und Pflichtinformationen Datenschutz
@@ -284,6 +285,12 @@ Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage in
 Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde; die Einwilligung ist jederzeit widerrufbar.
 
 Die von Ihnen an uns per Kontaktanfragen übersandten Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen – insbesondere gesetzliche Aufbewahrungsfristen – bleiben unberührt.
+
+### Calendly (externe Terminbuchung)
+
+Auf dieser Website finden Sie "Book a Call"-Schaltflächen, die Sie zu Calendly (Calendly LLC, 271 17th St NW, Suite 1000, Atlanta, GA 30363, USA) weiterleiten, um dort einen Termin zu buchen. Beim Klick auf diese Schaltflächen verlassen Sie unsere Website; Calendly ist kein Hoster dieser Website und erhält keine Daten von uns, solange Sie nicht auf den Link klicken.
+
+Die Verarbeitung Ihrer Daten auf der Calendly-Website unterliegt ausschließlich der Datenschutzerklärung von Calendly, die Sie hier finden: https://calendly.com/privacy.
 `,WI=`---
 footer: "12+ years building data systems that scale."
 items:
