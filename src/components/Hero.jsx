@@ -1,6 +1,6 @@
 import content from '../lib/content.js'
 import heroImg from '../assets/hero.jpg'
-import posthog from '../lib/posthog.js'
+import { analytics } from '../lib/analytics.js'
 
 export default function Hero() {
   const { greeting, cta, ctaLink, body } = content.hero
@@ -18,7 +18,7 @@ export default function Hero() {
             target="_blank"
             rel="noreferrer"
             className="btn"
-            onClick={() => posthog.capture('contact_cta_clicked', { source: 'hero' })}
+            onClick={() => analytics.ctaClicked({ location: 'hero' })}
           >
             {cta}
           </a>

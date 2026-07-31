@@ -1,7 +1,7 @@
 import ReactMarkdown from 'react-markdown'
 import content from '../lib/content.js'
 import Reveal from './Reveal.jsx'
-import posthog from '../lib/posthog.js'
+import { analytics } from '../lib/analytics.js'
 
 export default function Services() {
   const { title, location, cta, ctaLink, tiers = [], body } = content.services
@@ -20,7 +20,7 @@ export default function Services() {
             target="_blank"
             rel="noreferrer"
             className="btn"
-            onClick={() => posthog.capture('contact_cta_clicked', { source: 'services' })}
+            onClick={() => analytics.ctaClicked({ location: 'services' })}
           >
             {cta}
           </a>

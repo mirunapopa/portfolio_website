@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import content from '../lib/content.js'
-import posthog from '../lib/posthog.js'
+import { analytics } from '../lib/analytics.js'
 
 export default function Footer() {
   const { title, email, social, legal = [] } = content.contact
@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="footer-contact">
             <a
               href={`mailto:${email}`}
-              onClick={() => posthog.capture('contact_email_clicked')}
+              onClick={() => analytics.emailClicked()}
             >
               {email}
             </a>
@@ -22,7 +22,7 @@ export default function Footer() {
                 href={social.url}
                 target="_blank"
                 rel="noreferrer"
-                onClick={() => posthog.capture('social_profile_clicked')}
+                onClick={() => analytics.socialClicked({ network: social.label })}
               >
                 {social.label}
               </a>
