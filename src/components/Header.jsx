@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import content from '../lib/content.js'
 import logo from '../assets/logo.png'
+import posthog from '../lib/posthog.js'
 
 export default function Header() {
   const { name, tagline, nav = [], cta, ctaLink } = content.site
@@ -23,7 +24,13 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
-          <a href={ctaLink} target="_blank" rel="noreferrer" className="btn">
+          <a
+            href={ctaLink}
+            target="_blank"
+            rel="noreferrer"
+            className="btn"
+            onClick={() => posthog.capture('contact_cta_clicked', { source: 'header' })}
+          >
             {cta}
           </a>
         </nav>
