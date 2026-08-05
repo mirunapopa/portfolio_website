@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// Change 'portfolio_website' to your actual GitHub repo name
+// Served from mirunapopa.com (custom domain root), not a /portfolio_website/ subpath
 export default defineConfig({
   plugins: [react()],
-  base: '/portfolio_website/',
+  base: '/',
 })
