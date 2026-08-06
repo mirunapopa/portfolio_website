@@ -20,6 +20,14 @@ if (!posthogKey || !posthogHost) {
   const consent = getStoredConsent()
   posthog.init(posthogKey, {
     api_host: posthogHost,
+    // Requests go through our managed reverse proxy (posthogHost), so this
+    // tells the SDK where the actual PostHog app lives for generated links
+    // (session replay, toolbar, etc.) to resolve correctly.
+    ui_host: 'https://eu.posthog.com',
+    defaults: '2026-05-30',
+    // This site never calls identify() — all visitors stay anonymous —
+    // so there's no reason to create a full person profile per visitor.
+    person_profiles: 'identified_only',
     capture_exceptions: true,
     // This is a single-page app using hash-based routing, which the
     // default pageview autocapture doesn't detect on in-app navigation.
