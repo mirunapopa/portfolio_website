@@ -6,7 +6,7 @@ export default function Datenschutzerklarung() {
       name="datenschutzerklarung"
       title="Datenschutzerklärung — Miruna Popa"
       description="Datenschutzerklärung für die Website von Miruna Popa, Fractional Product Analyst."
-      path="/datenschutzerklarung"
+      path="/datenschutzerklarung/"
     />
   )
 }

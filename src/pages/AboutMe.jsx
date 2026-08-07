@@ -25,7 +25,7 @@ export default function AboutMe() {
   usePageMeta({
     title: 'About Miruna Popa — Fractional Product Analyst',
     description: title,
-    path: '/about',
+    path: '/about/',
   })
 
   return (

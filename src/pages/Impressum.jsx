@@ -6,7 +6,7 @@ export default function Impressum() {
       name="impressum"
       title="Impressum — Miruna Popa"
       description="Impressum and legal contact details for Miruna Popa, Fractional Product Analyst."
-      path="/impressum"
+      path="/impressum/"
     />
   )
 }
