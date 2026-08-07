@@ -3,6 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // https://github.com/rafgraph/spa-github-pages
+      // Decodes the path 404.html encoded into the query string, and
+      // rewrites the URL back to it before React Router mounts.
+      ;(function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&')
+            })
+            .join('?')
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash)
+        }
+      })(window.location)
+    </script>
     <title>Miruna Popa — Fractional Product Analyst</title>
     <meta name="description" content="I help product teams understand their users through analytics, tracking, and experimentation." />
     <link rel="icon" type="image/png" href="%BASE_URL%favicon.png" />
@@ -12,6 +30,7 @@
     <meta property="og:title" content="Miruna Popa — Fractional Product Analyst" />
     <meta property="og:description" content="I help product teams understand their users through analytics, tracking, and experimentation." />
     <meta property="og:url" content="https://mirunapopa.com/" />
+    <link rel="canonical" href="https://mirunapopa.com/" />
     <meta property="og:image" content="https://mirunapopa.com/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="628" />

@@ -6,6 +6,7 @@ import content from '../lib/content.js'
 import cassetteImg from '../assets/about-cassette.jpg'
 import lampImg from '../assets/about-lamp.jpg'
 import coffeeImg from '../assets/about-coffee.jpg'
+import usePageMeta from '../hooks/usePageMeta.js'
 
 function splitSections(body) {
   return body
@@ -21,6 +22,11 @@ function splitSections(body) {
 export default function AboutMe() {
   const { title, body } = content['about-me']
   const [story, curiosity, quote] = splitSections(body)
+  usePageMeta({
+    title: 'About Miruna Popa — Fractional Product Analyst',
+    description: title,
+    path: '/about',
+  })
 
   return (
     <>
