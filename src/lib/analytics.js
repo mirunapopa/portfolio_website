@@ -22,4 +22,8 @@ export const analytics = {
   socialClicked({ network }) {
     posthog.capture('social_clicked', { network, location: 'footer' })
   },
+
+  substackPostClicked({ title }) {
+    posthog.capture('substack_post_clicked', { title })
+  },
 }

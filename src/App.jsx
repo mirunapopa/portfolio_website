@@ -6,6 +6,7 @@ import CookieBanner from './components/CookieBanner.jsx'
 import CookiePreferencesButton from './components/CookiePreferencesButton.jsx'
 import Home from './pages/Home.jsx'
 import AboutMe from './pages/AboutMe.jsx'
+import Writing from './pages/Writing.jsx'
 import Datenschutzerklarung from './pages/Datenschutzerklarung.jsx'
 import Impressum from './pages/Impressum.jsx'
 
@@ -17,6 +18,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutMe />} />
+        <Route path="/writing" element={<Writing />} />
         <Route path="/datenschutzerklarung" element={<Datenschutzerklarung />} />
         <Route path="/impressum" element={<Impressum />} />
       </Routes>

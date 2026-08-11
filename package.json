@@ -4,7 +4,9 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "predev": "node scripts/fetch-substack-posts.js",
     "dev": "vite",
+    "prebuild": "node scripts/fetch-substack-posts.js",
     "build": "vite build && node scripts/generate-static-routes.js",
     "preview": "vite preview",
     "deploy": "npm run build && gh-pages -d dist"

@@ -12,7 +12,7 @@ import { join } from 'node:path'
 
 const distDir = join(import.meta.dirname, '..', 'dist')
 const indexFile = join(distDir, 'index.html')
-const routes = ['about', 'impressum', 'datenschutzerklarung']
+const routes = ['about', 'writing', 'impressum', 'datenschutzerklarung']
 
 for (const route of routes) {
   const routeDir = join(distDir, route)
