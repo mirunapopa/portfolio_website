@@ -5,6 +5,8 @@ import { analytics } from '../lib/analytics.js'
 const PAGE_NAMES = {
   '/': 'Home',
   '/about': 'About',
+  '/services': 'Services',
+  '/writing': 'Writing',
   '/datenschutzerklarung': 'Datenschutzerklärung',
   '/impressum': 'Impressum',
 }
