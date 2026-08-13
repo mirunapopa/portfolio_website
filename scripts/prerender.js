@@ -23,11 +23,18 @@ const routes = [
   '/',
   '/about',
   '/services',
-  '/writing',
+  '/newsletter',
   '/impressum',
   '/datenschutzerklarung',
-  ...posts.map((post) => `/writing/${post.slug}`),
+  ...posts.map((post) => `/newsletter/${post.slug}`),
 ]
+
+// The newsletter section used to live at /writing — anything that already
+// crawled or bookmarked those URLs should land on the new ones instead of
+// hitting a 404, so each old path gets a plain static redirect stub
+// (rather than being visited in the browser, which would just re-capture
+// the *new* page's content under the *old* URL).
+const legacyRedirects = [['/writing', '/newsletter'], ...posts.map((post) => [`/writing/${post.slug}`, `/newsletter/${post.slug}`])]
 
 const server = await preview({ preview: { port: 4174, strictPort: true } })
 const baseUrl = server.resolvedUrls.local[0].replace(/\/$/, '')
@@ -67,15 +74,37 @@ try {
   await new Promise((resolve) => server.httpServer.close(resolve))
 }
 
+const SITE_URL = 'https://mirunapopa.com'
+
+for (const [from, to] of legacyRedirects) {
+  const target = `${SITE_URL}${to}/`
+  const html = `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting…</title>
+    <link rel="canonical" href="${target}" />
+    <meta http-equiv="refresh" content="0; url=${target}" />
+  </head>
+  <body>
+    <p>This page has moved to <a href="${target}">${target}</a>.</p>
+  </body>
+</html>
+`
+  const outFile = join(distDir, from, 'index.html')
+  mkdirSync(dirname(outFile), { recursive: true })
+  await writeFile(outFile, html)
+  console.log(`Redirect stub ${from} -> ${to}`)
+}
+
 // public/sitemap.xml is static and can't know about posts that rotate in
 // and out of the feed, so regenerate it here from the same route list
 // that just got prerendered — keeps it accurate on every build.
-const SITE_URL = 'https://mirunapopa.com'
 const PRIORITY = {
   '/': '1.0',
   '/about': '0.8',
   '/services': '0.8',
-  '/writing': '0.7',
+  '/newsletter': '0.7',
   '/impressum': '0.1',
   '/datenschutzerklarung': '0.1',
 }

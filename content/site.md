@@ -7,7 +7,7 @@ nav:
   - label: "Services"
     url: "/services/"
   - label: "Newsletter"
-    url: "/writing/"
+    url: "/newsletter/"
 cta: "Book a Call"
 ctaLink: "https://calendly.com/mirunapopa"
 ---

@@ -6,7 +6,7 @@ const PAGE_NAMES = {
   '/': 'Home',
   '/about': 'About',
   '/services': 'Services',
-  '/writing': 'Writing',
+  '/newsletter': 'Newsletter',
   '/datenschutzerklarung': 'Datenschutzerklärung',
   '/impressum': 'Impressum',
 }

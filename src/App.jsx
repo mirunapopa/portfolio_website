@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate, useParams } from 'react-router-dom'
 import { CookieConsentProvider } from './lib/CookieConsentContext.jsx'
 import ScrollToTop from './components/ScrollToTop.jsx'
 import PageViewTracker from './components/PageViewTracker.jsx'
@@ -12,6 +12,11 @@ import WritingPost from './pages/WritingPost.jsx'
 import Datenschutzerklarung from './pages/Datenschutzerklarung.jsx'
 import Impressum from './pages/Impressum.jsx'
 
+function RedirectToNewsletterPost() {
+  const { slug } = useParams()
+  return <Navigate to={`/newsletter/${slug}`} replace />
+}
+
 export default function App() {
   return (
     <CookieConsentProvider>
@@ -21,8 +26,10 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutMe />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/writing" element={<Writing />} />
-        <Route path="/writing/:slug" element={<WritingPost />} />
+        <Route path="/newsletter" element={<Writing />} />
+        <Route path="/newsletter/:slug" element={<WritingPost />} />
+        <Route path="/writing" element={<Navigate to="/newsletter" replace />} />
+        <Route path="/writing/:slug" element={<RedirectToNewsletterPost />} />
         <Route path="/datenschutzerklarung" element={<Datenschutzerklarung />} />
         <Route path="/impressum" element={<Impressum />} />
       </Routes>

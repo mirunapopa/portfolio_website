@@ -24,7 +24,7 @@ export default function Writing() {
   usePageMeta({
     title: 'Newsletter — Miruna Popa',
     description: intro.replace(/\*/g, ''),
-    path: '/writing/',
+    path: '/newsletter/',
   })
 
   return (
@@ -65,7 +65,7 @@ export default function Writing() {
                   key={post.link}
                   delay={i * 80}
                   className="writing-card"
-                  to={`/writing/${post.slug}/`}
+                  to={`/newsletter/${post.slug}/`}
                   onClick={() => analytics.substackPostClicked({ title: post.title })}
                 >
                   {post.image && <img src={post.image} alt="" className="writing-card-img" loading="lazy" />}

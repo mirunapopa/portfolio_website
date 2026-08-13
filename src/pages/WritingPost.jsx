@@ -25,10 +25,10 @@ export default function WritingPost() {
   usePageMeta({
     title: post ? `${post.title} — Miruna Popa` : 'Newsletter — Miruna Popa',
     description: post ? post.excerpt : '',
-    path: `/writing/${slug}/`,
+    path: `/newsletter/${slug}/`,
   })
 
-  if (!post) return <Navigate to="/writing/" replace />
+  if (!post) return <Navigate to="/newsletter/" replace />
 
   const safeContent = DOMPurify.sanitize(post.content)
 
@@ -38,7 +38,7 @@ export default function WritingPost() {
 
       <article className="section section-light post">
         <div className="container post-container">
-          <Link to="/writing/" className="post-back">
+          <Link to="/newsletter/" className="post-back">
             ← Back to Newsletter
           </Link>
 
