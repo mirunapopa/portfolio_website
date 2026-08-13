@@ -26,8 +26,4 @@ export const analytics = {
   substackPostClicked({ title, location = 'writing-list' }) {
     posthog.capture('substack_post_clicked', { title, location })
   },
-
-  substackPostExpanded({ title }) {
-    posthog.capture('substack_post_expanded', { title })
-  },
 }

@@ -7,7 +7,7 @@ function setMetaContent(selector, content) {
   if (el) el.setAttribute('content', content)
 }
 
-export default function usePageMeta({ title, description, path = '/' }) {
+export default function usePageMeta({ title, description, path = '/', jsonLd }) {
   useEffect(() => {
     const previousTitle = document.title
     const url = `${SITE_URL}${path}`
@@ -24,9 +24,18 @@ export default function usePageMeta({ title, description, path = '/' }) {
     const previousCanonical = canonical?.getAttribute('href')
     if (canonical) canonical.setAttribute('href', url)
 
+    let script
+    if (jsonLd) {
+      script = document.createElement('script')
+      script.type = 'application/ld+json'
+      script.textContent = JSON.stringify(jsonLd)
+      document.head.appendChild(script)
+    }
+
     return () => {
       document.title = previousTitle
       if (canonical && previousCanonical) canonical.setAttribute('href', previousCanonical)
+      script?.remove()
     }
-  }, [title, description, path])
+  }, [title, description, path, jsonLd])
 }

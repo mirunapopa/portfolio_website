@@ -47,17 +47,6 @@ export default function WritingPost() {
           </Reveal>
           <p className="post-meta">{formatDate(post.pubDate)}</p>
 
-          {post.image && <img src={post.image} alt="" className="post-image" />}
-
-          <div className="section-body post-excerpt">
-            <p>{post.excerpt}</p>
-          </div>
-
-          <details className="post-details" onToggle={(e) => e.target.open && analytics.substackPostExpanded({ title: post.title })}>
-            <summary>Read the full post</summary>
-            <div className="section-body post-body" dangerouslySetInnerHTML={{ __html: safeContent }} />
-          </details>
-
           <div className="post-cta">
             <a
               href={post.link}
@@ -78,6 +67,14 @@ export default function WritingPost() {
               Subscribe on Substack
             </a>
           </div>
+
+          {post.image && <img src={post.image} alt="" className="post-image" />}
+
+          <div className="section-body post-excerpt">
+            <p>{post.excerpt}</p>
+          </div>
+
+          <div className="section-body post-body" dangerouslySetInnerHTML={{ __html: safeContent }} />
         </div>
       </article>
 

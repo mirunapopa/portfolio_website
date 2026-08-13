@@ -10,6 +10,20 @@ export default function Services() {
     title: 'Services — Miruna Popa',
     description: `${title} ${body}`,
     path: '/services/',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      name: 'Fractional Product Analytics',
+      serviceType: 'Product Analytics Consulting',
+      description: body,
+      url: 'https://mirunapopa.com/services/',
+      provider: {
+        '@type': 'Person',
+        name: 'Miruna Popa',
+        url: 'https://mirunapopa.com/',
+      },
+      areaServed: 'Worldwide',
+    },
   })
 
   return (
