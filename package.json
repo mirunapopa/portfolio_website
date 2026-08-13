@@ -7,11 +7,12 @@
     "predev": "node scripts/fetch-substack-posts.js",
     "dev": "vite",
     "prebuild": "node scripts/fetch-substack-posts.js",
-    "build": "vite build && node scripts/generate-static-routes.js",
+    "build": "vite build && node scripts/prerender.js",
     "preview": "vite preview",
     "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
+    "dompurify": "^3.4.13",
     "js-yaml": "^4.1.0",
     "posthog-js": "^1.409.2",
     "react": "^18.3.1",
@@ -22,6 +23,8 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.1",
     "gh-pages": "^6.1.1",
+    "jsdom": "^29.1.1",
+    "puppeteer": "^25.6.0",
     "vite": "^5.4.2"
   }
 }

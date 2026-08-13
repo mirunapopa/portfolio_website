@@ -5,10 +5,35 @@
 // just for content instead of routing.
 import { writeFileSync, existsSync } from 'node:fs'
 import { join } from 'node:path'
+import { JSDOM } from 'jsdom'
 
 const FEED_URL = 'https://sayitwithdata.substack.com/feed'
 const OUTPUT_PATH = join(import.meta.dirname, '..', 'src', 'data', 'substack-posts.json')
 const POST_LIMIT = 6
+
+// Substack's RSS <content:encoded> includes its own embedded subscribe
+// form and share buttons baked into the post HTML. Those only work on
+// Substack's own domain, so they'd render as dead UI on ours — strip any
+// element that looks like platform chrome rather than article content.
+const CHROME_SELECTORS = [
+  '[class*="subscription-widget"]',
+  '[class*="subscribe-widget"]',
+  '[class*="share-dialog"]',
+  '[class*="button-wrapper"]',
+  '[data-component-name="SubscribeWidgetToDOM"]',
+  '[data-component-name="SharePostToDOM"]',
+]
+
+function cleanPostContent(html) {
+  const dom = new JSDOM(`<!doctype html><body>${html}</body>`)
+  const { document } = dom.window
+  document.querySelectorAll(CHROME_SELECTORS.join(',')).forEach((el) => el.remove())
+  return document.body.innerHTML.trim()
+}
+
+function slugify(link) {
+  return link.replace(/\/+$/, '').split('/').pop()
+}
 
 const NAMED_ENTITIES = {
   amp: '&',
@@ -43,13 +68,18 @@ function extractImage(block) {
 
 function parseFeed(xml) {
   const items = xml.match(/<item>[\s\S]*?<\/item>/g) || []
-  return items.slice(0, POST_LIMIT).map((block) => ({
-    title: extractTag(block, 'title'),
-    link: extractTag(block, 'link'),
-    excerpt: extractTag(block, 'description'),
-    pubDate: extractTag(block, 'pubDate'),
-    image: extractImage(block),
-  }))
+  return items.slice(0, POST_LIMIT).map((block) => {
+    const link = extractTag(block, 'link')
+    return {
+      title: extractTag(block, 'title'),
+      link,
+      slug: slugify(link),
+      excerpt: extractTag(block, 'description'),
+      pubDate: extractTag(block, 'pubDate'),
+      image: extractImage(block),
+      content: cleanPostContent(extractTag(block, 'content:encoded')),
+    }
+  })
 }
 
 try {

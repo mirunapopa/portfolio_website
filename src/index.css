@@ -426,6 +426,81 @@ a {
   margin-top: 44.8px;
 }
 
+/* Writing post */
+.post-container {
+  max-width: 700px;
+}
+
+.post-back {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: var(--color-accent);
+  text-decoration: none;
+  margin-bottom: 24px;
+}
+
+.post-back:hover {
+  text-decoration: underline;
+}
+
+.post-title {
+  margin: 0 0 8px;
+}
+
+.post-meta {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  opacity: 0.7;
+  margin: 0 0 24px;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+  margin: 0 0 24px;
+}
+
+.post-excerpt p {
+  font-weight: 600;
+}
+
+.post-details {
+  margin: 24px 0 32px;
+  border-top: 1px solid rgba(32, 31, 29, 0.15);
+  padding-top: 24px;
+}
+
+.post-details summary {
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--color-accent);
+  font-size: 1.05rem;
+}
+
+.post-details[open] summary {
+  margin-bottom: 16px;
+}
+
+.post-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.post-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+  padding: 16px 30px;
+}
+
 /* Footer */
 .site-footer {
   background: var(--color-light);

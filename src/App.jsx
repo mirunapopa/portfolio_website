@@ -8,6 +8,7 @@ import Home from './pages/Home.jsx'
 import AboutMe from './pages/AboutMe.jsx'
 import Services from './pages/Services.jsx'
 import Writing from './pages/Writing.jsx'
+import WritingPost from './pages/WritingPost.jsx'
 import Datenschutzerklarung from './pages/Datenschutzerklarung.jsx'
 import Impressum from './pages/Impressum.jsx'
 
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/about" element={<AboutMe />} />
         <Route path="/services" element={<Services />} />
         <Route path="/writing" element={<Writing />} />
+        <Route path="/writing/:slug" element={<WritingPost />} />
         <Route path="/datenschutzerklarung" element={<Datenschutzerklarung />} />
         <Route path="/impressum" element={<Impressum />} />
       </Routes>

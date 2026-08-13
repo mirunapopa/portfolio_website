@@ -19,4 +19,4 @@ tiers:
   - title: "Open-ended / exploratory"
     intro: "Not Sure Yet? — Some of the best work starts with a conversation. Bring your questions, your mess, or just a feeling that something isn't right with your data. We'll figure out the shape of it together."
 ---
-Whether you're starting from zero or scaling what's already there, I'll help you figure out where to focus and what to do next. Clear scope, honest pricing, and no surprises along the way.
+A fractional product analyst gives your team senior-level analytics expertise — metrics, tracking, and experimentation — without the cost or commitment of a full-time hire. Whether you're starting from zero or scaling what's already there, I'll help you figure out where to focus and what to do next. Clear scope, honest pricing, and no surprises along the way.

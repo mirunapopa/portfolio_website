@@ -1,4 +1,5 @@
 import ReactMarkdown from 'react-markdown'
+import { Link } from 'react-router-dom'
 import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
 import Reveal from '../components/Reveal.jsx'
@@ -60,13 +61,11 @@ export default function Writing() {
             <div className="writing-grid">
               {posts.map((post, i) => (
                 <Reveal
-                  as="a"
+                  as={Link}
                   key={post.link}
                   delay={i * 80}
                   className="writing-card"
-                  href={post.link}
-                  target="_blank"
-                  rel="noreferrer"
+                  to={`/writing/${post.slug}/`}
                   onClick={() => analytics.substackPostClicked({ title: post.title })}
                 >
                   {post.image && <img src={post.image} alt="" className="writing-card-img" loading="lazy" />}
