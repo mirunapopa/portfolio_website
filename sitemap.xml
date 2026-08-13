@@ -24,4 +24,16 @@
     <loc>https://mirunapopa.com/datenschutzerklarung/</loc>
     <priority>0.1</priority>
   </url>
+  <url>
+    <loc>https://mirunapopa.com/writing/200-variant-experiments-that-get/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mirunapopa.com/writing/how-i-decide-if-a-subscription-has/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mirunapopa.com/writing/the-practice-phase-of-a-sabbatical-1/</loc>
+    <priority>0.6</priority>
+  </url>
 </urlset>
