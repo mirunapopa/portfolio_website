@@ -23,7 +23,7 @@ export default function AboutMe() {
   const { title, body } = content['about-me']
   const [story, curiosity, quote] = splitSections(body)
   usePageMeta({
-    title: 'About Miruna Popa — Fractional Product Analyst',
+    title: 'About Me — Miruna Popa',
     description: title,
     path: '/about/',
   })
