@@ -3,17 +3,13 @@
 ### Impressum
 Miruna - Maria Popa 
 
-Strassburger Str. 9K 
-
-10405 Berlin
+[PLACEHOLDER — business/virtual mailing address, not home address]
 
 ### Kontakt
 
 E-Mail: hello@mirunapopa.com
 
 ### Berufsbezeichnung und berufsrechtliche Regelungen
-
-Steuernummer: 31/476/01651
 
 Berufsbezeichnung:
 Unternehmerberaterin Produkt- und Datenanalyse
