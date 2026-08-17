@@ -5,7 +5,7 @@ export default function Datenschutzerklarung() {
     <LegalPage
       name="datenschutzerklarung"
       title="Datenschutzerklärung — Miruna Popa"
-      description="Datenschutzerklärung für die Website von Miruna Popa, Fractional Product Analyst."
+      description="Datenschutzerklärung für die Website von Miruna Popa, Fractional Product Analytics Consultant."
       path="/datenschutzerklarung/"
     />
   )

@@ -5,7 +5,7 @@ export default function Impressum() {
     <LegalPage
       name="impressum"
       title="Impressum — Miruna Popa"
-      description="Impressum and legal contact details for Miruna Popa, Fractional Product Analyst."
+      description="Impressum and legal contact details for Miruna Popa, Fractional Product Analytics Consultant."
       path="/impressum/"
     />
   )

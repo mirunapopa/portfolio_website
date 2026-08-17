@@ -1,6 +1,6 @@
 ---
 name: "Miruna Popa"
-tagline: "Fractional Product Analyst"
+tagline: "Fractional Product Analytics Consultant"
 nav:
   - label: "About Me"
     url: "/about/"
