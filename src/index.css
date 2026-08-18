@@ -691,7 +691,9 @@ a {
   z-index: 300;
   background: var(--color-dark);
   color: var(--color-text-light);
-  padding: 24px 32px;
+  border: 6px solid #fff;
+  border-bottom: none;
+  padding: 36px 32px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -702,8 +704,8 @@ a {
 .cookie-banner p {
   margin: 0;
   max-width: 640px;
-  font-size: 0.95rem;
-  line-height: 1.5;
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
 
 .cookie-banner a {
