@@ -3,7 +3,9 @@
 ### Impressum
 Miruna - Maria Popa 
 
-[PLACEHOLDER — business/virtual mailing address, not home address]
+Strassburger Str. 9K
+
+10405 Berlin
 
 ### Kontakt
 
