@@ -34,5 +34,20 @@ sampleTimeline:
     - range: "Weeks 11–12"
       title: "Handoff"
       body: "Train PMs and the data team, and leave behind a sustainable analytics roadmap."
+faq:
+  - question: "What is a fractional product analytics consultant?"
+    answer: "In product analytics, we're particularly obsessed with experimentation — running proper A/B tests instead of eyeballing a chart and guessing whether a feature caused an uptick. It's the most scientific way to know whether what you shipped actually worked, especially once a product gets complex enough that isolating one change's impact stops being simple. A fractional product analytics consultant brings that discipline — metrics, tracking, and experimentation — to your team without the cost or commitment of a full-time hire."
+  - question: "How is this different from hiring a full-time analyst?"
+    answer: "You get senior-level expertise on the schedule your business actually needs, flexible to amount needed: from a few hours a week, to 3-6 months retainer, with a focused project or embedded support during a specific phase. All this with a much speedier process, and getting the answers you need now vs. 6 months from now."
+  - question: "Who is this for?"
+    answer: "Small to medium businesses that need a diagnosis of what's working and where to focus; larger businesses that want embedded support building pipelines and experimentation frameworks from the inside; and anyone still figuring out the shape of their data problem."
+  - question: "How does pricing work?"
+    answer: "Every engagement is scoped individually. After a discovery call, I provide a tailored proposal within 48 hours with clear deliverables, timelines, and pricing — no fixed packages, no surprises."
+  - question: "What does an engagement look like from start to finish?"
+    answer: "Three steps: a discovery call to understand your goals, a tailored proposal within 48 hours, and collaborative delivery with regular updates and feedback built in along the way."
+  - question: "Where are you based, and do you work with international clients?"
+    answer: "Based in Berlin, Germany, and available to work with clients globally."
+  - question: "What kind of companies have you worked with?"
+    answer: "12+ years across companies including Bolt, Delivery Hero, King (Candy Crush), and EyeEm — spanning ride-hailing, food delivery, gaming, and B2B/B2C product analytics."
 ---
-A fractional product analyst gives your team senior-level analytics expertise — metrics, tracking, and experimentation — without the cost or commitment of a full-time hire. Whether you're starting from zero or scaling what's already there, I'll help you figure out where to focus and what to do next. Clear scope, honest pricing, and no surprises along the way.
+A fractional product analytics consultant gives your team senior-level analytics expertise — metrics, tracking, and experimentation — without the cost or commitment of a full-time hire. Whether you're starting from zero or scaling what's already there, I'll help you figure out where to focus and what to do next. Clear scope, honest pricing, and no surprises along the way.

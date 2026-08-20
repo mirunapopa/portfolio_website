@@ -4,7 +4,7 @@ import Reveal from './Reveal.jsx'
 import { analytics } from '../lib/analytics.js'
 
 export default function Services() {
-  const { title, location, cta, ctaLink, tiers = [], body, sampleTimeline } = content.services
+  const { title, location, cta, ctaLink, tiers = [], body, sampleTimeline, faq = [] } = content.services
 
   return (
     <section id="services" className="section section-dark services">
@@ -53,6 +53,17 @@ export default function Services() {
                 </div>
               ))}
             </div>
+          </Reveal>
+        )}
+        {faq.length > 0 && (
+          <Reveal as="div" className="faq">
+            <h3 className="faq-title">Frequently asked questions</h3>
+            {faq.map((item) => (
+              <details className="faq-item" key={item.question}>
+                <summary>{item.question}</summary>
+                <p>{item.answer}</p>
+              </details>
+            ))}
           </Reveal>
         )}
       </div>

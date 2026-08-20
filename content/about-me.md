@@ -2,7 +2,7 @@
 title: "I believe good analytics come with clarity first, tools second."
 ---
 # My story
-I'm Miruna Popa, a fractional product analyst based in Berlin, Germany, with 12+ years of experience in analytics, tracking, and experimentation — including in-house roles at King (Candy Crush), Delivery Hero, and Bolt.
+I'm Miruna Popa, a fractional product analytics consultant based in Berlin, Germany, with 12+ years of experience in analytics, tracking, and experimentation — including in-house roles at King (Candy Crush), Delivery Hero, and Bolt.
 
 After more than a decade working in analytics, my definition of value changed.
 
