@@ -4,7 +4,7 @@ import Reveal from './Reveal.jsx'
 import { analytics } from '../lib/analytics.js'
 
 export default function Services() {
-  const { title, location, cta, ctaLink, tiers = [], body } = content.services
+  const { title, location, cta, ctaLink, tiers = [], body, sampleTimeline } = content.services
 
   return (
     <section id="services" className="section section-dark services">
@@ -40,6 +40,21 @@ export default function Services() {
             </Reveal>
           ))}
         </div>
+        {sampleTimeline && (
+          <Reveal as="div" className="sample-timeline">
+            <h3 className="sample-timeline-title">{sampleTimeline.title}</h3>
+            {sampleTimeline.note && <p className="sample-timeline-note">{sampleTimeline.note}</p>}
+            <div className="sample-timeline-phases">
+              {sampleTimeline.phases.map((phase) => (
+                <div className="sample-timeline-phase" key={phase.range}>
+                  <span className="sample-timeline-range">{phase.range}</span>
+                  <h4>{phase.title}</h4>
+                  <p>{phase.body}</p>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+        )}
       </div>
     </section>
   )

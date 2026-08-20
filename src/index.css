@@ -348,6 +348,63 @@ a {
   line-height: 1.8;
 }
 
+.sample-timeline {
+  grid-column: 1 / -1;
+  margin-top: 24px;
+  padding: 40px;
+  background: #a8482a;
+  color: var(--color-text-light);
+  border-radius: 12px;
+}
+
+.sample-timeline-title {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  margin: 0 0 8px;
+  color: var(--color-text-light);
+}
+
+.sample-timeline-note {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.85;
+  margin: 0 0 28px;
+}
+
+.sample-timeline-phases {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.sample-timeline-phase {
+  padding-top: 16px;
+  border-top: 2px solid rgba(242, 241, 238, 0.5);
+}
+
+.sample-timeline-range {
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+  opacity: 0.85;
+  margin-bottom: 8px;
+}
+
+.sample-timeline-phase h4 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  margin: 0 0 8px;
+}
+
+.sample-timeline-phase p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.85;
+  margin: 0;
+}
+
 /* Writing */
 .writing-intro {
   max-width: 700px;
@@ -859,6 +916,11 @@ a {
 
   .services-grid {
     grid-template-columns: 1fr;
+  }
+
+  .sample-timeline-phases {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .about-grid {
