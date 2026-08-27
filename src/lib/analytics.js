@@ -15,6 +15,14 @@ export const analytics = {
     posthog.capture('cta_clicked', { location })
   },
 
+  ctaBarShown({ location }) {
+    posthog.capture('cta_bar_shown', { location })
+  },
+
+  ctaBarDismissed({ location }) {
+    posthog.capture('cta_bar_dismissed', { location })
+  },
+
   emailClicked() {
     posthog.capture('email_clicked', { location: 'footer' })
   },

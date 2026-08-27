@@ -3,6 +3,7 @@ import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
 import Reveal from '../components/Reveal.jsx'
 import Testimonials from '../components/Testimonials.jsx'
+import BookCall from '../components/BookCall.jsx'
 import content from '../lib/content.js'
 import cassetteImg from '../assets/about-cassette.jpg'
 import lampImg from '../assets/about-lamp.jpg'
@@ -20,13 +21,46 @@ function splitSections(body) {
     })
 }
 
+const SITE_URL = 'https://mirunapopa.com'
+
 export default function AboutMe() {
   const { title, body } = content['about-me']
   const [story, curiosity] = splitSections(body)
+  const { items: testimonials = [] } = content.testimonials
   usePageMeta({
     title: 'About Me — Miruna Popa',
     description: title,
     path: '/about/',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'ProfilePage',
+      mainEntity: {
+        '@type': 'Person',
+        name: 'Miruna Popa',
+        url: `${SITE_URL}/`,
+        jobTitle: 'Fractional Product Analytics Consultant',
+        description: title,
+        knowsAbout: [
+          'Product Analytics',
+          'A/B Testing',
+          'Experimentation',
+          'Root Cause Analysis',
+          'Data Tracking',
+          'Product Metrics',
+          'Data Pipelines',
+        ],
+        review: testimonials.map((t) => ({
+          '@type': 'Review',
+          reviewBody: t.quote,
+          author: { '@type': 'Person', name: t.name },
+          itemReviewed: {
+            '@type': 'Service',
+            name: 'Fractional Product Analytics',
+            provider: { '@type': 'Person', name: 'Miruna Popa' },
+          },
+        })),
+      },
+    },
   })
 
   return (
@@ -72,6 +106,8 @@ export default function AboutMe() {
       </div>
 
       <Testimonials />
+
+      <BookCall page="about-me" />
 
       <Footer />
     </>

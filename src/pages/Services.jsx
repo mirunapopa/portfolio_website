@@ -1,6 +1,7 @@
 import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
 import ServicesSection from '../components/Services.jsx'
+import BookCall from '../components/BookCall.jsx'
 import content from '../lib/content.js'
 import usePageMeta from '../hooks/usePageMeta.js'
 
@@ -44,6 +45,7 @@ export default function Services() {
     <>
       <Header />
       <ServicesSection />
+      <BookCall page="services" />
       <Footer />
     </>
   )
