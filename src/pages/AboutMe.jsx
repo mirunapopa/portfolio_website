@@ -2,6 +2,7 @@ import ReactMarkdown from 'react-markdown'
 import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
 import Reveal from '../components/Reveal.jsx'
+import Testimonials from '../components/Testimonials.jsx'
 import content from '../lib/content.js'
 import cassetteImg from '../assets/about-cassette.jpg'
 import lampImg from '../assets/about-lamp.jpg'
@@ -21,7 +22,7 @@ function splitSections(body) {
 
 export default function AboutMe() {
   const { title, body } = content['about-me']
-  const [story, curiosity, quote] = splitSections(body)
+  const [story, curiosity] = splitSections(body)
   usePageMeta({
     title: 'About Me — Miruna Popa',
     description: title,
@@ -70,16 +71,7 @@ export default function AboutMe() {
         </div>
       </div>
 
-      <section className="section section-light about-section about-quote">
-        <div className="container">
-          <Reveal as="blockquote" className="about-quote-text">
-            <ReactMarkdown>{quote.heading}</ReactMarkdown>
-          </Reveal>
-          <Reveal as="div" delay={100} className="about-quote-attribution">
-            <ReactMarkdown>{quote.body}</ReactMarkdown>
-          </Reveal>
-        </div>
-      </section>
+      <Testimonials />
 
       <Footer />
     </>

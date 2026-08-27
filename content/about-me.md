@@ -26,6 +26,3 @@ Ultimately, my work is meant to do more than answer questions. It should help sp
 The difference is that those ideas are grounded in data, not guesswork.
 
 And I promise you, there’s a lot that you can squeeze out of the data that you have.
-
-# _“She picked up on our anxiety and gave the most reassuring read on our data as to what we can do next. Would love to collaborate again.”_
-_— the kind of feedback I aim to earn from my clients_
