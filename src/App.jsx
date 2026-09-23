@@ -6,7 +6,6 @@ import CookieBanner from './components/CookieBanner.jsx'
 import CookiePreferencesButton from './components/CookiePreferencesButton.jsx'
 import Home from './pages/Home.jsx'
 import AboutMe from './pages/AboutMe.jsx'
-import Services from './pages/Services.jsx'
 import Writing from './pages/Writing.jsx'
 import WritingPost from './pages/WritingPost.jsx'
 import Datenschutzerklarung from './pages/Datenschutzerklarung.jsx'
@@ -25,7 +24,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutMe />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/services" element={<Navigate to="/about/" replace />} />
         <Route path="/newsletter" element={<Writing />} />
         <Route path="/newsletter/:slug" element={<WritingPost />} />
         <Route path="/writing" element={<Navigate to="/newsletter" replace />} />

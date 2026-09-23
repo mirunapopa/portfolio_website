@@ -22,19 +22,19 @@ const posts = JSON.parse(readFileSync(join(rootDir, 'src', 'data', 'substack-pos
 const routes = [
   '/',
   '/about',
-  '/services',
   '/newsletter',
   '/impressum',
   '/datenschutzerklarung',
   ...posts.map((post) => `/newsletter/${post.slug}`),
 ]
 
-// The newsletter section used to live at /writing — anything that already
-// crawled or bookmarked those URLs should land on the new ones instead of
+// Services was merged into the About page (/about), and the newsletter
+// section used to live at /writing — anything that already crawled or
+// bookmarked those URLs should land on the new ones instead of
 // hitting a 404, so each old path gets a plain static redirect stub
 // (rather than being visited in the browser, which would just re-capture
 // the *new* page's content under the *old* URL).
-const legacyRedirects = [['/writing', '/newsletter'], ...posts.map((post) => [`/writing/${post.slug}`, `/newsletter/${post.slug}`])]
+const legacyRedirects = [['/writing', '/newsletter'], ['/services', '/about'], ...posts.map((post) => [`/writing/${post.slug}`, `/newsletter/${post.slug}`])]
 
 const server = await preview({ preview: { port: 4174, strictPort: true } })
 const baseUrl = server.resolvedUrls.local[0].replace(/\/$/, '')
@@ -103,7 +103,6 @@ for (const [from, to] of legacyRedirects) {
 const PRIORITY = {
   '/': '1.0',
   '/about': '0.8',
-  '/services': '0.8',
   '/newsletter': '0.7',
   '/impressum': '0.1',
   '/datenschutzerklarung': '0.1',

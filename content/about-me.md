@@ -1,28 +1,13 @@
 ---
-title: "I believe good analytics come with clarity first, tools second."
+title: "Product decisions don’t have to be based on vibes. They can be evidence-based."
+metaTitle: "About Miruna Popa — Fractional Product Analytics Services"
+metaDescription: "Berlin-based fractional product analytics consultant with 12+ years at King, Delivery Hero and Bolt. Services for small to large product teams."
 ---
 # My story
-I'm Miruna Popa, a fractional product analytics consultant based in Berlin, Germany, with 12+ years of experience in analytics, tracking, and experimentation — including in-house roles at King (Candy Crush), Delivery Hero, and Bolt.
+I’m Miruna Popa, a Berlin-based Fractional Product Analytics Consultant with 12+ years of experience, including in-house roles at King (Candy Crush), Delivery Hero, and Bolt.
 
-After more than a decade working in analytics, my definition of value changed.
+I’ve worked with small teams building their first dashboards and data foundations, and with larger product organizations where metrics need to connect to company goals and strategic decisions.
 
-Early in my career, I believed the strength of my work came from the tools I used and the dashboards I built. Over time, I noticed something uncomfortable: many of those dashboards were rarely used.
+I’m quick to structure a messy problem and identify the decision underneath it. I use product data, statistical methods, and experiment design to show what the evidence supports, where it’s incomplete, and what options make sense.
 
-What teams actually needed wasn’t more data. They needed clarity.
-
-Today, I focus first on understanding the goal of our collaboration. From there, my role is to translate complex data into clear recommendations that help move your product or business forward.
-
-Having worked across multiple industries and product environments, I’ve learned to recognize patterns quickly. I identify the decisions that matter most.
-
-I don’t aim to deliver dashboards. I aim to deliver direction.
-
-# Driven by curiosity
-Once I understand the problem you're trying to solve, I become deeply invested in it.
-
-My goal is not just to analyze the data, but to explore multiple paths forward. I typically come back with a few different options and recommendations, highlighting the one I believe will have the strongest impact.
-
-Ultimately, my work is meant to do more than answer questions. It should help spark new ideas about where your product or business can go next.
-
-The difference is that those ideas are grounded in data, not guesswork.
-
-And I promise you, there’s a lot that you can squeeze out of the data that you have.
+The decision stays with you. My role is to help you make it with clarity and confidence.

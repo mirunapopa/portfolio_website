@@ -348,6 +348,16 @@ a {
   line-height: 1.8;
 }
 
+.service-tier .service-tier-addons {
+  margin: 16px 0 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.service-tier-addons strong {
+  font-weight: 600;
+}
+
 .sample-timeline {
   grid-column: 1 / -1;
   margin-top: 24px;
@@ -657,30 +667,20 @@ a {
   max-width: 900px;
 }
 
-.about-hero-img {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 .about-section {
   background: #ffffff;
 }
 
-.about-photo-section {
-  padding: 44.8px 0;
+.section.about-hero {
+  padding-bottom: 0;
 }
 
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 44.8px;
-  align-items: center;
+.about-hero .about-title {
+  margin-bottom: 0;
 }
 
-.about-side-img {
-  width: 100%;
-  height: auto;
+.about-story {
+  max-width: 760px;
 }
 
 .about-text-right {
@@ -694,11 +694,6 @@ a {
   color: var(--color-text);
   font-size: clamp(1.75rem, 3vw, 2.25rem);
   margin: 0 0 24px;
-}
-
-.about-full-img {
-  width: 100%;
-  height: auto;
 }
 
 /* Testimonials */
@@ -1116,10 +1111,6 @@ a {
   .sample-timeline-phases {
     grid-template-columns: 1fr;
     gap: 20px;
-  }
-
-  .about-grid {
-    grid-template-columns: 1fr;
   }
 
   .testimonials-grid {

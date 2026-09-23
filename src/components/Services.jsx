@@ -37,6 +37,11 @@ export default function Services() {
                   ))}
                 </ul>
               )}
+              {tier.addons?.items?.length > 0 && (
+                <p className="service-tier-addons">
+                  <strong>{tier.addons.label}</strong> {tier.addons.items.join(' · ')}
+                </p>
+              )}
             </Reveal>
           ))}
         </div>

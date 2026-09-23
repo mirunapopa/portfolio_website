@@ -2,10 +2,8 @@
 name: "Miruna Popa"
 tagline: "Fractional Product Analytics Consultant"
 nav:
-  - label: "About Me"
+  - label: "About"
     url: "/about/"
-  - label: "Services"
-    url: "/services/"
   - label: "Newsletter"
     url: "/newsletter/"
 cta: "Book a Call"
