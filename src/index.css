@@ -710,9 +710,14 @@ a {
 
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 32px;
   max-width: 1072px;
+}
+
+/* Odd count: the first card spans the full row */
+.testimonials-grid > .testimonial:first-child:nth-last-child(odd) {
+  grid-column: 1 / -1;
 }
 
 .testimonials-grid-single {
